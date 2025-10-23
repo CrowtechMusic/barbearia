@@ -3,54 +3,174 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Barbearia Jota do Corte</title>
+    <title>Jota do Corte - Barbearia</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="#">
-          <img src="imglogo.jpg" alt="logo" width="40" height="40" class="me-2">
-          <span>Barbearia Jota do Corte</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navMenu">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
-            <li class="nav-item"><a class="nav-link" href="#services">Serviços</a></li>
-            <li class="nav-item"><a class="nav-link" href="#testimonials">Depoimentos</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
-          </ul>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="img/logo.png" alt="Logo Jota do Corte" width="50" height="50" class="me-2 rounded">
+            <strong>Jota do Corte</strong>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#about">Sobre Nós</a></li>
+              <li class="nav-item"><a class="nav-link" href="#services">Serviços</a></li>
+              <li class="nav-item"><a class="nav-link" href="#testimonials">Depoimentos</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-    <header class="hero bg-image text-white d-flex align-items-center">
-      <div class="container text-center py-5">
-        <h1 class="display-5 fw-bold">Barbearia Jota do Corte</h1>
-        <p class="lead">Cortes clássicos, estilo moderno. Bem-vindo ao seu novo visual.</p>
-        <a href="#contact" class="btn btn-primary btn-lg">Agende agora</a>
-      </div>
+      </nav>
     </header>
+
+    <!-- Home -->
+    <section id="home" class="hero text-white text-center d-flex align-items-center justify-content-center">
+      <div class="container">
+        <h1 class="display-4 fw-bold">Estilo, Tradição e Confiança</h1>
+        <p class="lead">Transforme seu visual com quem entende de corte.</p>
+        <a href="#contact" class="btn btn-warning btn-lg mt-3">Agendar Agora</a>
+      </div>
+    </section>
+
+    <!-- Sobre Nós -->
     <section id="about" class="py-5">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-6">
             <h2>Sobre Nós</h2>
-            <p class="lead">A Barbearia Jota do Corte reúne tradição e técnica contemporânea. Ambiente acolhedor, profissionais experientes e atenção ao detalhe para transformar seu estilo.</p>
+            <p class="lead">Na Jota do Corte, o cuidado com o cliente vem em primeiro lugar. Nossa barbearia combina técnicas modernas com o estilo clássico que nunca sai de moda.</p>
+            <p>Com profissionais experientes e um ambiente acolhedor, garantimos a melhor experiência em corte, barba e relaxamento masculino.</p>
           </div>
           <div class="col-md-6 text-center">
-            <img src="imglogo.jpg" alt="Barbearia" class="img-fluid rounded shadow-sm">
+            <img src="img/sobre.jpg" alt="Barbearia Jota do Corte" class="img-fluid rounded shadow">
           </div>
         </div>
       </div>
     </section>
-    <footer class="py-4 bg-dark text-white text-center">
-      <small>&copy; <span id="year"></span> Barbearia Jota do Corte</small>
+
+    <!-- Serviços -->
+    <section id="services" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">Nossos Serviços</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="img/corte.jpg" class="card-img-top" alt="Corte de Cabelo">
+              <div class="card-body">
+                <h5 class="card-title">Corte de Cabelo</h5>
+                <p class="card-text">Do clássico ao moderno, nossos profissionais garantem um corte sob medida para o seu estilo.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="img/barba.jpg" class="card-img-top" alt="Barba">
+              <div class="card-body">
+                <h5 class="card-title">Barba</h5>
+                <p class="card-text">Design e cuidado com produtos de qualidade para uma barba impecável.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="img/hidratacao.jpg" class="card-img-top" alt="Hidratação">
+              <div class="card-body">
+                <h5 class="card-title">Hidratação</h5>
+                <p class="card-text">Recupere o brilho e a força dos fios com nossos tratamentos especiais.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section id="testimonials" class="py-5">
+      <div class="container text-center">
+        <h2 class="mb-4">O que dizem nossos clientes</h2>
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <blockquote class="blockquote">
+                <p>“Melhor barbearia da cidade! Atendimento top e ambiente agradável.”</p>
+                <footer class="blockquote-footer text-white">João Alves</footer>
+              </blockquote>
+            </div>
+            <div class="carousel-item">
+              <blockquote class="blockquote">
+                <p>“O Jota manda muito bem no fade. Saio sempre satisfeito.”</p>
+                <footer class="blockquote-footer text-white">Pedro Henrique</footer>
+              </blockquote>
+            </div>
+            <div class="carousel-item">
+              <blockquote class="blockquote">
+                <p>“Lugar perfeito pra relaxar e cuidar do visual.”</p>
+                <footer class="blockquote-footer text-white">Lucas Pereira</footer>
+              </blockquote>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Próximo</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contact" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Entre em Contato</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="name" placeholder="Seu nome">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email" placeholder="seu@email.com">
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Mensagem</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Escreva sua mensagem..."></textarea>
+              </div>
+              <div class="d-grid">
+                <button type="submit" class="btn btn-warning btn-lg">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center py-3">
+      <small>&copy; <span id="year"></span> Jota do Corte - Todos os direitos reservados.</small>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+      document.querySelector('form').addEventListener('submit', function(e){
+        e.preventDefault();
+        alert('Mensagem enviada com sucesso!');
+        this.reset();
+      });
+    </script>
   </body>
 </html>
