@@ -1,0 +1,2 @@
+:root{--brand-1:#1f2b34;--brand-2:#f0a500;}
+.hero{background-image:linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),url('imglogo.jpg');background-size:cover;background-position:center;min-height:360px;}
